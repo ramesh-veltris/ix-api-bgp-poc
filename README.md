@@ -9,8 +9,11 @@
 2. **Run the Sandbox**
 
   Follow the instructions under "Running the Sandbox" in the IX-API Sandbox README to start the API server(https://gitlab.com/ix-api/ix-api-sandbox-v2).
+  
 3. **Get API Key & Secret**
+   
   After running the sandbox, obtain your API Key and API Secret.
+
 4. **Set up .env file**
 
 Copy the example file:
