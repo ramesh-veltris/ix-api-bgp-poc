@@ -39,7 +39,12 @@ env\Scripts\activate          # On Windows
 pip install -r requirements.txt
 ```
  7.**Run the Django server**
-
+```bash
+python manage.py makemigrations
+```
+```bash
+python manage.py migrate
+```
 ```bash
 python manage.py runserver
 ```
