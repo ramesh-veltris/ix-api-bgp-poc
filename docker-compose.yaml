@@ -1,14 +1,17 @@
-
 version: "3"
 services:
 
-  sandbox:
+  sandbox_bgp:
     build: .
     command: runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
     volumes:
       - .:/code
+    environment:
+      IX_API_BASE_URL: ${IX_API_BASE_URL}
+      IX_API_KEY: ${IX_API_KEY}
+      IX_API_SECRET: ${IX_API_SECRET}
     deploy:
       restart_policy:
         condition: on-failure
