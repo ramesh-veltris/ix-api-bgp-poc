@@ -8,8 +8,12 @@ from core.views.network_service_view import NetworkServiceView
 from core.views.network_service_config_view import NetworkServiceConfigView
 from core.views.network_feature_view import NetworkFeatureView
 from core.views.network_feature_config_view import NetworkFeatureConfigView
+from core.views.accounts_view import AccountListView
+
+
 
 urlpatterns = [
+    path('accounts/', AccountListView.as_view(), name='accounts'),
     path('product-offerings/', ProductOfferingView.as_view(), name='product-offerings'),
     path('pops/', PopView.as_view(), name='pops'),
     path('macs/', MacView.as_view(), name='macs'),
